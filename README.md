@@ -9,13 +9,14 @@ focused, and confident while navigating the job search process.
 - Login and Register forms using React Router and useState
 - Dashboard to manage internship/job applications (Coming soon)
 - Fully responsive and styled with Tailwind CSS
-- Built for real-world experience and growth as a developer
+
 
 ## 💡 Why I Built This
 As a software developer, I wanted to build something that:
 - Solves a real problem I've experienced: staying on top of job applications
 - Lets me apply what I’ve learned in school (React, routing, state management)
 - Gives me a portfolio project I’m proud to show recruiters and hiring managers
+
 
 ## 🛠 Tech Stack
 - React
