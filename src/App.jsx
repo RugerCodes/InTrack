@@ -19,6 +19,7 @@ function App() {
   {!isLoggedIn && <Link to="/login">Login</Link>}
   {!isLoggedIn && <Link to="/register">Register</Link>}
   {isLoggedIn && <Link to="/dashboard">Dashboard</Link>}
+  {isLoggedIn && <Link to="/tracker">Tracker</Link>} 
 </nav>
 
 
@@ -27,7 +28,7 @@ function App() {
         <Route path="/login" element={<Login onLogin={() => setIsLoggedIn(true)} />} />
         <Route path="/register" element={<Register />} />
         <Route path="/dashboard" element={<ProtectedRoute isLoggedIn={isLoggedIn}> <Dashboard onLogout={() => setIsLoggedIn(false)} /> </ProtectedRoute>}/>
-        <Route path="/tracker" element={<ProtectedRoute><Tracker /></ProtectedRoute>} />
+        <Route path="/tracker" element={ <ProtectedRoute isLoggedIn={isLoggedIn}> <Tracker /> </ProtectedRoute> }/>
       </Routes>
     </div>
   )
